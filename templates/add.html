@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<a href="/">Home</a>
+<style type="text/css">
+h2 {font-size: 120%}
+a {font-size: 120%}
+</style>
+
+<br><br>
+
+<head>
+    <title>A Shop</title>
+</head>
+
+<body>
+<h1>Add your goods</h1>
+
+{%if alert%}
+<h2>
+	{{alert}}
+</h2>
+{%else%}
+<h2></h2>
+{%endif%}
+
+<hr>
+
+<form action="" method="post">
+	<h2>name:</h2><input type="text" name="gname">
+	<h2>link:</h2><input type="text" name="glink">
+	<h2>money:</h2><input type="text" name="gmoney"><br><br>
+	<input type="submit" name="submit" value="submit to add">
+</form>
+
+</body>
+</html>
+

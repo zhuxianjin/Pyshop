@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<a href="/">Home</a>
+<a href="/login/">
+{%if Login%}
+{{Login}}
+{%else%}
+{{Login}}
+{%endif%}
+</a>
+<style type="text/css">
+h2 {font-size: 120%}
+a {font-size: 120%}
+</style>
+
+<br><br>
+
+<head>
+    <title>Goods</title>
+</head>
+
+<body>
+<h1>{{agood[0][0]}}</h1>
+
+<img src='{{agood[0][1]}}' alt='{{agood[0][0]}}'/>
+
+<h3>${{agood[0][2]}}</h3>
+
+<form action="" method="post">
+	<input type="hidden" name="gname" value="{{agood[0][0]}}">
+	<input type="hidden" name="gmoney" value={{agood[0][2]}}>
+	<input type="submit" name="submit" value="buy">
+</form>
+
+{{msg}}
+
+</body>
+</html>

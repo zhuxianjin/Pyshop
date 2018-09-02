@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<h2></h2>
+
+{%if alert%}
+<h2>
+	{{alert}}
+</h2>
+{%else%}
+<h2></h2>
+{%endif%}
+
+<form action="" method="post">
+	<h2>Username:</h2><input type="username" name="user">
+	<h2>Password:</h2><input type="password" name="passwd"><br><br>
+	<input type="submit" name="submit" value="submit">
+</form>
+
+
+
+</body>
+</html>

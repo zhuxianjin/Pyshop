@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<a href="/">Home</a>
+<a href="/login/">
+{%if Login%}
+{{Login}}
+{%else%}
+{{Log}}
+{%endif%}
+</a>
+<style type="text/css">
+h2 {font-size: 120%}
+a {font-size: 120%}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1>Login</h1>
+
+{%if name%}
+<h2>
+	welcome {{name}} :)
+</h2>
+{%else%}
+<h2>welcome,please login</h2>
+{%endif%}
+
+{%if money%}
+<h3>
+	your money: {{money}}
+</h3>
+{%else%}
+<h3></h3>
+{%endif%}
+
+<a href="/add/">add goods for your site </a>
+
+<form action="" method="post">
+	<input type="submit" name="logout" value="logout">
+</form>
+
+</body>
+</html>

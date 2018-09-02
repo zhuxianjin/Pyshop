@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<a href="/">Home</a>
+<a href="/login/">
+{%if Login%}
+{{Login}}
+{%else%}
+{{Login}}
+{%endif%}
+</a>
+<style type="text/css">
+h2 {font-size: 120%}
+a {font-size: 120%}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1>Login</h1>
+
+{%if name%}
+<h2>
+	welcome,{{name}}
+</h2>
+{%else%}
+<h2>welcome,please login</h2>
+{%endif%}
+
+{%if alert%}
+<h2>
+	{{alert}}
+</h2>
+{%else%}
+<h2></h2>
+{%endif%}
+
+<form action="" method="post">
+	<h2>Username:</h2><input type="username" name="user">
+	<h2>Password:</h2><input type="password" name="passwd"><br><br>
+	<input type="submit" name="submit" value="submit">
+</form>
+
+<a href="/register/">register</a>
+
+</body>
+</html>

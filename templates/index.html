@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<a href="/">Home</a>
+<a href="/login/">
+{%if Login%}
+{{Login}}
+<a href="/logout/">logout</a>
+{%else%}
+{{Login}}
+{%endif%}
+</a>
+<style type="text/css">
+h2 {font-size: 120%}
+a {font-size: 120%}
+</style>
+
+<br><br>
+
+<head>
+    <title>A Shop</title>
+</head>
+
+<body>
+<h1>This is a shop</h1>
+<p>Buy something you like. :)</p>
+
+<hr>
+
+{%for i in goods %}
+<a href='/view/{{i[0]}}'>
+<img src='{{i[1]}}' alt='{{i[0]}}'/>
+</a>
+<br>
+${{i[2]}}&nbsp;&nbsp;&nbsp;<a href="/view/{{i[0]}}">buy</a>
+
+<hr>
+{%endfor%}
+
+</body>
+
+</html>
