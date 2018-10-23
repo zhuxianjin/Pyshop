@@ -1,5 +1,6 @@
-### 基于python3.6的简陋商店系统
+### 基于flask/jinja2的简陋的商店系统
 
+* python3.6
 * 需开启mysql服务，首次需运行initdb.py创建数据库（或还原备份的数据库）
 * 再运行app.py并注册账号
 
