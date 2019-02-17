@@ -15,5 +15,5 @@
 * 优化initdb.py，防止二次运行删除数据
 
 
-![Jietu20180831-154531.png](https://i.loli.net/2018/08/31/5b88f26506464.png)
+![img](img/5b88f26506464.png)
 
